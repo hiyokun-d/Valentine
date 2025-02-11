@@ -1,0 +1,46 @@
+.text-container {
+  text-align: center;
+  position: relative;
+  /* Add this */
+  height: 100%;
+  /* Add this */
+  width: 100%;
+  /* Add this */
+}
+
+.greeting-text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: #ff69b4;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  padding: 0 20px;
+  word-wrap: break-word;
+
+  /* Position each greeting in the same spot */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+
+  /* Animation properties */
+  transform-origin: center center;
+  will-change: transform, opacity;
+  background: linear-gradient(45deg, #ff69b4, #ff1493);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Container positioning */
+.greetings-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}

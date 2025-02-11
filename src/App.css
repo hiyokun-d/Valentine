@@ -1,0 +1,15 @@
+.pinkBackground {
+  background-color: #fc92f0;
+}
+
+.whiteBackground {
+  background-color: #A6F1E0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

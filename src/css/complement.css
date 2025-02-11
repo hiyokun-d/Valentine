@@ -1,0 +1,65 @@
+.compliments-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.hearts-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.text-container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.compliment-text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  position: absolute;
+  left: 65%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  background: linear-gradient(45deg, #ff69b4, #ff1493);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 3px 3px 6px rgba(255, 105, 180, 0.3);
+}
+
+.love-text {
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff0066, #ff4593, #ff69b4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 15px rgba(255, 105, 180, 0.5));
+}
+
+.love-text p {
+  margin: 0;
+  font-size: 30px;
+}
+
+.floating-heart,
+.sparkle {
+  position: fixed;
+  font-size: 24px;
+  pointer-events: none;
+  filter: drop-shadow(0 0 10px rgba(255, 182, 193, 0.7));
+}
